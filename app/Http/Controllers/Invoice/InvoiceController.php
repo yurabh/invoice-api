@@ -21,22 +21,6 @@ use OpenApi\Attributes as OAT;
     title: "Invoice Management API"
 )]
 #[OAT\Server(url: "http://localhost:8000")]
-#[OAT\Schema(
-    schema: "InvoiceResource",
-    properties: [
-        new OAT\Property(property: "id", type: "string", format: "uuid", example: "9df13a22-381a-4b9d-b4b3-57f920258144"),
-        new OAT\Property(property: "number", type: "string", example: "INV-2026-001"),
-        new OAT\Property(property: "supplier_name", type: "string", example: "ТОВ Рога і Копита"),
-        new OAT\Property(property: "supplier_tax_id", type: "string", example: "12345678"),
-        new OAT\Property(property: "net_amount", type: "number", format: "float", example: 100.00),
-        new OAT\Property(property: "vat_amount", type: "number", format: "float", example: 20.00),
-        new OAT\Property(property: "gross_amount", type: "number", format: "float", example: 120.00),
-        new OAT\Property(property: "currency", type: "string", example: "UAH"),
-        new OAT\Property(property: "status", type: "string", example: "pending", enum: ["pending", "approved", "rejected"]),
-        new OAT\Property(property: "issue_date", type: "string", format: "date", example: "2026-08-30"),
-        new OAT\Property(property: "due_date", type: "string", format: "date", example: "2026-09-15")
-    ]
-)]
 class InvoiceController extends Controller
 {
     public function __construct(
