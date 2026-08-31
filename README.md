@@ -1,4 +1,4 @@
-                                   Invoice Management System — Backend API (Laravel 13)
+                                 Invoice Management System — Backend API (Laravel 13)
 
 Реалізація бекенд-частини full-stack системи автоматизації роботи бухгалтерів для обліку рахунків (invoices).
 
